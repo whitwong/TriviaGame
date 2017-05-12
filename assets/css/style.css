@@ -1,3 +1,4 @@
+/*General styles*/
 body {
 	background: url("../images/background.jpg");
 	background-size: 100px 100px;
@@ -5,6 +6,7 @@ body {
 }
 .overall {
 	margin: auto;
+	margin-top: 50px;
 	text-align: center;
 	width: 70%;
 	background: url("../images/parchment2.jpg");
@@ -22,6 +24,7 @@ h1 {
 	width: 80%;
 	color: #2E4E66;
 }
+/*Button styles*/
 #start {
 	margin-top: 50px;
 	height: 80px;
@@ -42,6 +45,27 @@ h1 {
 	box-shadow: 0 5px #999;
   transform: translateY(4px);
 }
+#reset {
+	margin-top: 50px;
+	height: 80px;
+	width: 60%;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 3em;
+	box-shadow: 0 9px #999;
+	background: #E98A6F;
+	color: white;
+}
+#reset:hover {
+	background: #E95848;
+}
+#reset:active {
+	box-shadow: 0 5px #999;
+  transform: translateY(4px);
+}
+/*Main Content Styles*/
 #timer {
 	padding: 5px;
 	font-weight: bold;
@@ -68,23 +92,9 @@ h1 {
 	font-weight: bold;
 	font-size: 2em;
 }
-#reset {
-	margin-top: 50px;
-	height: 80px;
-	width: 60%;
-	border: none;
-	outline: none;
-	border-radius: 10px;
-	font-weight: bold;
-	font-size: 3em;
-	box-shadow: 0 9px #999;
-	background: #E98A6F;
-	color: white;
-}
-#reset:hover {
-	background: #E95848;
-}
-#reset:active {
-	box-shadow: 0 5px #999;
-  transform: translateY(4px);
+/*Media Queries*/
+@media screen and (max-width: 790px) {
+	.overall {
+		width: 550px;
+	}
 }

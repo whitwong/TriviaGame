@@ -2,7 +2,7 @@
 function reset() {
 	var questionsArr = [];
 	var intervalId;
-	totalTime = 15;
+	totalTime = 25;
 	counterCorrect = 0;
 	counterIncorrect = 0;
 	counterNoAnswer = 0;
@@ -142,8 +142,8 @@ function answerDisplay() {
 		$("#gif").html("<img src="+ questionsArr[questionCount].image + ">");
 
 		//Time values. setTimeout() for how long to show gif before returning to startTrivia()
-		var gifShow = setTimeout(startTrivia, 5000);
-		totalTime = 15;
+		var gifShow = setTimeout(startTrivia, 8000);
+		totalTime = 25;
 
 		//Condition to display if user answered correctly and to increment counters
 		var answer = $(this).attr("value");
@@ -174,8 +174,8 @@ function answerDisplayNoClick(){
 		$("#gif").html("<img src="+ questionsArr[questionCount].image + ">");
 
 		//Time values. setTimeout() for how long to show gif before returning to startTrivia()
-		var gifShow = setTimeout(startTrivia, 5000);
-		totalTime = 15;
+		var gifShow = setTimeout(startTrivia, 8000);
+		totalTime = 25;
 
 		//Increment questionCount to display next question
 		questionCount++;
