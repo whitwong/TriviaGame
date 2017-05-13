@@ -1,3 +1,6 @@
+/*Declare global variables*/
+var totalTime, counterCorrect, counterIncorrect, counterNoAnswer, questionCount;
+
 /**Reset function**/
 function reset() {
 	var questionsArr = [];
